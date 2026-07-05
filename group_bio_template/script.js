@@ -31,3 +31,21 @@ function showSection(sectionId) {
         visionSection.style.display = "block";
     }
 }
+
+function toggleBio(bioId) {
+    const bio = document.getElementById(bioId);
+
+    if (bio.style.display === "none" || bio.style.display === "") {
+        bio.style.display = "block";
+
+        if (bioId === "bio1") {
+            document.getElementById("img1").style.display = "block";
+        }
+    } else {
+        bio.style.display = "none";
+
+        if (bioId === "bio1") {
+            document.getElementById("img1").style.display = "none";
+        }
+    }
+}
