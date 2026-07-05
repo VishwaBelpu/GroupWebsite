@@ -1,0 +1,3 @@
+[submodule "group_bio_template"]
+	path = group_bio_template
+	url = https://github.com/sandrawiktor/group_bio_template.git
