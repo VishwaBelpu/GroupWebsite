@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brandon's CS Moodboard</title>
+    <style>
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f7f1e8;
+            color: #2f2a25;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: #3b2f2f;
+            color:#fff8ef;
+        }
+
+        .profile {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #d6a85f;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        .card {
+            background: #fffaf3;
+            color: #2f2a25;
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 10px;
+            border-left: 5px solid #c9823b;
+            box-shadow: 0 2px 8px rgba(47, 42, 37, 0.12);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        button {
+            padding: 10px 14px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #8b5e34;
+            color: white;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #0d9488;
+        }
+
+        a {
+            color: #8b4513;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <img class="profile" src="img/Brandon_Profile.jpg" alt="Brandon">
+    <h1>Brandon's Computer Science Moodboard</h1>
+    <p>CS Student | Problem Solver | Cybersecurity Learner</p>
+
+</header>
+
+<div class="section">
+
+    <!-- About Me -->
+
+    <h2>About Me</h2>
+    <div class="card">
+        I am a now Senior computer science student interested in cybersecurity,
+        learning how technology can solve real-world problems, and continuing to
+        grow and learn new skills. In my free time I enjoy reading,
+        playing video games, and working out.
+    </div>
+
+    <h2>Moodboard</h2>
+
+    <button onclick="show('tools')">Tools</button>
+    <button onclick="show('interests')">Interests</button>
+    <button onclick="show('inspirations')">Inspirations</button>
+
+    <!-- Tools -->
+
+    <div id="tools" class="grid">
+        <div class="card">GitHub: tracking code and working with teams</div>
+        <div class="card">PyCharm: writing and testing projects </div>
+        <div class="card">MySQL: building and organizing databases</div>
+        <div class="card">Wireshark: analyzing traffic on a computer network</div>
+    </div>
+
+    <!-- Interests -->
+
+    <div id="interests" class="grid hidden">
+        <div class="card">Cybersecurity</div>
+        <div class="card">Problem Solving</div>
+        <div class="card">Databases</div>
+        <div class="card">Programming</div>
+    </div>
+
+    <!-- Inspirations -->
+
+    <div id="inspirations" class="grid hidden">
+        <div class="card">Creating clean and organized code</div>
+        <div class="card">Getting hands-on experience programming</div>
+        <div class="card">The process of learning and problem-solving code</div>
+        <div class="card">Using TryHackMe practice rooms</div>
+    </div>
+
+    <!-- Resources -->
+
+    <h2>Favorite Resources</h2>
+    <div class="card">
+        <p>Sites that I would use to learn and practice:</p>
+        <a href="https://tryhackme.com/">TryHackMe</a> |
+        <a href="https://www.hackthebox.com/">Hack The Box</a> |
+        <a href="https://www.w3schools.com/">W3 Schools</a>
+    </div>
+
+</div>
+
+    <script>
+        function show(section) {
+            document.getElementById("tools").classList.add("hidden");
+            document.getElementById("interests").classList.add("hidden");
+            document.getElementById("inspirations").classList.add("hidden");
+
+            document.getElementById(section).classList.remove("hidden");
+
+        }
+        </script>
+</body>
+</html>

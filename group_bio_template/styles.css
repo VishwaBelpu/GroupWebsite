@@ -1,23 +1,29 @@
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f3f6f8;
+    color: #1f2933;
     margin: 0;
     padding: 0;
 }
 
 /* Header section styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #1f2a44;
+    color: white;
+    padding: 28px 0;
     text-align: center;
+    border-bottom: 5px solid #2f855a;
 }
 
 /* Styling for team logo image */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
-    margin-top: 10px;
+    width: 120px; /* Adjust the size as needed */
+    height: auto;
+    margin-top: 12px;
+    padding: 8px;
+    background: #2f855a;
+    border-radius: 8px;
 }
 
 /* Menu button styling */
@@ -52,9 +58,10 @@ header nav button:hover {
 .card {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #1f2a44;
+    box-shadow: 0 3px 10px rgba(31, 42, 68, 0.12);
     margin: 10px;
-    padding: 20px;
+    padding: 22px;
     flex: 1 1 calc(30% - 40px);
     text-align: center;
     transition: transform 0.2s;
@@ -87,4 +94,12 @@ button {
 
 button:hover {
     background: #0056b3;
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 6px;
+    border-radius: 50%;
 }
